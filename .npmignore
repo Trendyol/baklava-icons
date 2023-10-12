@@ -1,0 +1,6 @@
+docs/
+.github
+.husky
+.storybook
+*.mdx
+*.test.ts
