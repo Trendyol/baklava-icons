@@ -1,27 +1,34 @@
 {
   "name": "@trendyol/baklava-icons",
+  "type": "module",
   "version": "0.0.0-dev",
   "description": "Icon set for Baklava Design System",
   "main": "index.js",
-  "scripts": {
-    "build": "node ./scripts/build.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook-generate": "sb-rn-get-stories",
-    "storybook-watch": "sb-rn-watcher"
+  "publishConfig": {
+    "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Trendyol/baklava-icons.git"
+  "files": [
+    "dist/"
+  ],
+  "homepage": "https://baklava.design",
+  "repository": "github:Trendyol/baklava-icons",
+  "bugs": {
+    "url": "https://github.com/Trendyol/baklava-icons/issues"
+  },
+  "author": {
+    "name": "Trendyol Tech",
+    "url": "https://github.com/Trendyol"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "node ./scripts/build.mjs"
   },
   "keywords": [
     "icons"
   ],
-  "author": "Trendyol Tech",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Trendyol/baklava-icons/issues"
+  "engines": {
+    "node": ">=18"
   },
-  "homepage": "https://github.com/Trendyol/baklava-icons#readme",
   "devDependencies": {
     "@babel/core": "^7.22.17",
     "@react-native-async-storage/async-storage": "^1.19.3",
@@ -36,6 +43,8 @@
     "fs-extra": "^11.1.1",
     "globby": "^13.2.2",
     "react-native-safe-area-context": "^4.7.2",
-    "semantic-release": "^21.0.2"
+    "semantic-release": "^21.0.2",
+    "eslint": "^8.44.0",
+    "eslint-plugin-storybook": "^0.6.13"
   }
 }
