@@ -18,7 +18,6 @@ module.exports = {
     quotes: ["error", "double", { avoidEscape: true }],
     semi: ["error", "always"],
     "no-empty": "off",
-    "unused-imports/no-unused-imports": "error",
     "padding-line-between-statements": [
       "error",
       { blankLine: "always", prev: ["const", "let", "var"], next: "*" },

@@ -1,0 +1,13 @@
+name: 'Verify and Release Beta'
+
+on:
+  push:
+    branches:
+      - next
+
+jobs:
+  release:
+    uses: trendyol/baklava-icons/.github/workflows/release.yml@next
+    secrets: inherit
+  chromatic:
+    uses: trendyol/baklava-icons/.github/workflows/publish-chromatic.yml@next

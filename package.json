@@ -21,7 +21,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "node ./scripts/build.mjs"
+    "build": "node ./scripts/build.mjs",
+    "commit": "commit"
   },
   "keywords": [
     "icons"
@@ -30,6 +31,9 @@
     "node": ">=18"
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@commitlint/prompt-cli": "^16.2.4",
     "@babel/core": "^7.22.17",
     "@react-native-async-storage/async-storage": "^1.19.3",
     "@react-native-community/datetimepicker": "^7.5.0",
