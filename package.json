@@ -8,7 +8,9 @@
     "access": "public"
   },
   "files": [
-    "dist/"
+    "icons/",
+    "index.js",
+    "index.d.ts"
   ],
   "homepage": "https://baklava.design",
   "repository": "github:Trendyol/baklava-icons",
