@@ -24,7 +24,8 @@
   "license": "MIT",
   "scripts": {
     "build": "node ./scripts/build.mjs",
-    "commit": "commit"
+    "commit": "commit",
+    "prepare": "husky"
   },
   "keywords": [
     "icons"
