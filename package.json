@@ -53,6 +53,7 @@
     "@storybook/web-components": "^7.6.17",
     "@storybook/web-components-vite": "^7.6.17",
     "babel-loader": "^8.3.0",
+    "chromatic": "6.17",
     "eslint": "^8.44.0",
     "eslint-plugin-storybook": "^0.6.13",
     "flexsearch": "^0.7.43",
