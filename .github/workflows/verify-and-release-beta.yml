@@ -9,6 +9,5 @@ jobs:
   release:
     uses: trendyol/baklava-icons/.github/workflows/release.yml@next
     secrets: inherit
-  # TODO
-  # chromatic:
-  #   uses: trendyol/baklava-icons/.github/workflows/publish-chromatic.yml@next
+  chromatic:
+    uses: trendyol/baklava-icons/.github/workflows/publish-chromatic.yml@next
