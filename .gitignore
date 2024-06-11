@@ -37,3 +37,5 @@ src/component-list.json
 coverage/
 build-storybook.log
 baklava-react.ts
+
+*storybook.log

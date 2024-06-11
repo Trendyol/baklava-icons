@@ -1,8 +1,8 @@
 import React, { lazy, Suspense } from "react";
-import icons from "../../index";
+import icons from "../index";
 import { IconGallery, IconItem } from "@storybook/blocks";
-import synonyms from "../../synonyms";
-import debounce from "../utils/debounce";
+import synonyms from "../synonyms";
+import debounce from "./utils/debounce";
 
 import flexsearch, { type IndexSearchResult } from "flexsearch";
 
@@ -59,7 +59,7 @@ const SvgMap = new Map<string, any>();
 export function IconSvg({ name }: IconSvgProps) {
   const Svg = SvgMap.has(name)
     ? SvgMap.get(name)
-    : lazy(() => import(`../../icons/${name}.svg`));
+    : lazy(() => import(`../icons/${name}.svg`));
 
   SvgMap.set(name, Svg);
 

@@ -1,4 +1,5 @@
 docs/
+stories/
 .github
 .husky
 .storybook
