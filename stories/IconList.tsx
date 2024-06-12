@@ -3,8 +3,9 @@ import icons from "../index";
 import { IconGallery, IconItem } from "@storybook/blocks";
 import synonyms from "../synonyms";
 import debounce from "./utils/debounce";
-
 import flexsearch, { type IndexSearchResult } from "flexsearch";
+
+import "./IconList.css";
 
 const searchIndex = new flexsearch.Index({
   tokenize: "full",
@@ -85,12 +86,12 @@ export function IconList() {
           });
         }
       }, 300),
-    []
+    [],
   );
 
   const listedIcons = React.useMemo(
     () => (keys === null ? icons : keys),
-    [keys]
+    [keys],
   );
 
   React.useEffect(() => {
@@ -112,13 +113,16 @@ export function IconList() {
         }}
       />
 
-      <IconGallery>
+      <div className="icon-gallery">
         {listedIcons.map((iconName) => (
-          <IconItem key={iconName} name={iconName}>
-            <IconSvg name={iconName} />
-          </IconItem>
+          <div className="icon-gallery__item">
+            <div className="icon-gallery__icon">
+              <IconSvg name={iconName} />
+            </div>
+            <div className="icon-gallery__name">{iconName}</div>
+          </div>
         ))}
-      </IconGallery>
+      </div>
     </div>
   );
 }
