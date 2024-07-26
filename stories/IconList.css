@@ -1,7 +1,7 @@
 .icon-gallery {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
 .icon-gallery__item {

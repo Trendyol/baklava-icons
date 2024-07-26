@@ -26,8 +26,8 @@
     "build": "node ./scripts/build.mjs",
     "commit": "commit",
     "prepare": "husky",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "npm run build && storybook dev -p 6006",
+    "build-storybook": "npm run build && storybook build"
   },
   "keywords": [
     "icons"
