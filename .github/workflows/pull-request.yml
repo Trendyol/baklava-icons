@@ -3,13 +3,11 @@ name: 'Verify and Preview'
 on:
   pull_request:
     branches:
-      # TODO update branch
-      - next
+      - main
 
 permissions:
   pull-requests: read
 
 jobs:
   chromatic:
-    # TODO update branch
-    uses: trendyol/baklava-icons/.github/workflows/publish-chromatic.yml@feature/storybook
+    uses: trendyol/baklava-icons/.github/workflows/publish-chromatic.yml@main
