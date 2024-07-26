@@ -1,0 +1,41 @@
+.icon-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.icon-gallery__item {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  flex: 0 1 calc(20% - 10px);
+  min-width: 120;
+
+  margin: 0px 10px 30px 0;
+}
+
+.icon-gallery__icon {
+  border-radius: 4px;
+  background: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.10) 0 1px 3px 0;
+  border: 1px solid hsla(203, 50%, 30%, 0.15);
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+.icon-gallery__icon svg {
+  width: 20;
+  height: 20;
+}
+
+.icon-gallery__name {
+  font: var(--bl-font-body-text-1-regular);
+  margin-left: 10;
+}
+
