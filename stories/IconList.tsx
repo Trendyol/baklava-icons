@@ -1,6 +1,5 @@
 import React, { lazy, Suspense } from "react";
 import icons from "../index";
-import { IconGallery, IconItem } from "@storybook/blocks";
 import synonyms from "../synonyms";
 import debounce from "./utils/debounce";
 import flexsearch, { type IndexSearchResult } from "flexsearch";

@@ -1,4 +1,5 @@
-name: 'Verify and Release Beta'
+# TODO branch update
+name: 'Verify and Release'
 
 on:
   push:
@@ -6,8 +7,12 @@ on:
       - next
 
 jobs:
+  publish:
+    uses: trendyol/baklava-icons/.github/workflows/publish-storybook.yml@next
+    secrets: inherit
   release:
     uses: trendyol/baklava-icons/.github/workflows/release.yml@next
+    needs: publish
     secrets: inherit
   chromatic:
     uses: trendyol/baklava-icons/.github/workflows/publish-chromatic.yml@next

@@ -23,5 +23,4 @@ jobs:
       - name: Publish to Chromatic
         uses: chromaui/action@latest
         with:
-          projectToken: chpt_a07698d9050a64d
-          debug: true
+          projectToken: chpt_4ce7e3f28a30111
