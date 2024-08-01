@@ -5,4 +5,4 @@ export default {
   component: IconList,
 };
 
-export const Primary = {};
+export const Iconography = {};
