@@ -55,7 +55,7 @@
     "@storybook/theming": "^8.1.6",
     "babel-loader": "^8.3.0",
     "chromatic": "^11.5.3",
-    "eslint": "^8.44.0",
+    "eslint": "^9.8.0",
     "eslint-plugin-storybook": "^0.8.0",
     "flexsearch": "^0.7.43",
     "fs-extra": "^11.1.1",
