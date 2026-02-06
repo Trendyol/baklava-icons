@@ -1,11 +1,5 @@
 name: Release
 
-on:
-  workflow_call:
-    secrets:
-      TRENDYOL_JS_NPM_TOKEN:
-        required: true
-
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -19,11 +13,12 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
-        run: npm ci
+        run: npm clean-install
+      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        run: npm audit signatures
       - name: Run build
         run: npm run build
       - name: Publish
         run: npx semantic-release@20
         env:
-          NPM_TOKEN: ${{ secrets.TRENDYOL_JS_NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
