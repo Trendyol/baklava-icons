@@ -26,6 +26,6 @@ jobs:
       - name: Run build
         run: npm run build
       - name: Publish
-        run: npx semantic-release@20
+        run: npx semantic-release@25
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
