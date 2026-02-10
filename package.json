@@ -35,7 +35,7 @@
     "icons"
   ],
   "engines": {
-    "node": ">=18"
+    "node": ">=24"
   },
   "devDependencies": {
     "@babel/core": "^7.22.17",
