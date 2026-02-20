@@ -19,5 +19,9 @@ jobs:
     uses: trendyol/baklava-icons/.github/workflows/release.yml@main
     needs: publish
     secrets: inherit
+    permissions:
+      contents: write
+      id-token: write
+      issues: write
   chromatic:
     uses: trendyol/baklava-icons/.github/workflows/publish-chromatic.yml@main
