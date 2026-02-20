@@ -2,6 +2,9 @@ name: Release
 
 on:
   workflow_call:
+    secrets:
+      NPM_TOKEN:
+        required: true
 
 permissions:
   contents: write
@@ -31,4 +34,5 @@ jobs:
         run: npx semantic-release@25
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: 'true'
